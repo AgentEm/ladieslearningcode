@@ -1,6 +1,7 @@
-#Ladies Learning Code slide deck template
+#Intro to HTML5 and Responsive Design
 
-This slide deck includes features such as incremental display of content, interactive CSS demos built into the slides, markdown integration and presenter notes. View **index.html** or http://ladieslearningcode.github.io/llc-slidedeck-template for details on usage.
+This slide content was created for the Ladies Learning Code workshop "Intro to HTML5 and Responsive Design", taking place on October 25th, 2014. The course covers HTML and CSS basics, media queries, responsive design theory and practice, and is intended for complete beginners.
+
 
 Created with <a href="https://github.com/LeaVerou/csss/sample-slideshow.html">Lea Verou's CSS-based SlideShow System</a> and <a href="http://lab.hakim.se/reveal-js/">reveal.js</a>. Syntax highlighting courtesy of http://highlightjs.org. Best viewed in Chrome or Firefox.
 
