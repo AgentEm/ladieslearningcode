@@ -31,32 +31,183 @@
         <img class="logo" src="framework/img/logo-llc-white.png">
         <div class="info">
             <h1>
-                <span class="title-bg">Title of Workshop</span><br>
+                <span class="title-bg">Intro to HTML5 and Responsive Design</span><br>
                 <!-- second line if needed -->
-                <span class="title-bg">Second line</span>
             </h1>
-            <h2><span>with</span> Instructor Name</h2>
+            <h2><span>with</span> Emily Porta</h2>
 
-            <img class="instructor-img" src="framework/img/profile-generic.jpg" alt="instructor name">
+            <img class="instructor-img" src="framework/img/emily-porta.jpg" alt="Emily Porta">
             <ul>
-                <li><i class="fa fa-envelope"></i><a href="mailto:">hello@email.com</li>
-                <li><i class="fa fa-desktop"></i><a href="#">mywebsite.com</a></li>
-                <li><i class="fa fa-twitter"></i><a href="http://twitter.com/">@twitter_name</a></li>
+                <li><i class="fa fa-envelope"></i><a href="mailto:">eeporta@gmail.com</li>
+                <li><i class="fa fa-desktop"></i><a href="#">emilyporta.com</a></li>
+                <li><i class="fa fa-twitter"></i><a href="http://twitter.com/agentemily">@agentemily</a></li>
             </ul>
         </div>
     </header>
 
     <main>
         <section class="slide title">
-            <h1>Title Slide Example: add a title class to section tag</h1>
-        </section>
-
-        <section class="slide title">
-            <h1>Title Slide Example</h1>
-            <h2>Sub-heading example</h2>
+            <h1>Let's get started!</h1>
         </section>
 
         <section class="slide">
+            <h2>Workshop Outline</h2>
+            <p><strong>Part One: Fundamentals</strong></p>
+            <ul>
+                <li class="delayed">Setting up our environment (computers)</li>
+                <li class="delayed">What is responsive design?</li>
+                <li class="delayed">Thinking mobile and responsive</li>
+                <li class="delayed">Crash course in HTML5</li>
+                <li class="delayed">CSS fundamentals</li>
+            </ul>
+            <p class="delayed"><em>Lunch Break!</em></p>
+
+            <p class="delayed"><strong>Part Two: Implementation</strong></p>
+            <ul>
+                <li class="delayed">CSS fundamentals continued</li>
+                <li class="delayed">HTML + CSS for responsive design: key features</li>
+                <li class="delayed">Tools to test your designs</li>
+                <li class="delayed">Images</li>
+                <li class="delayed">Typography</li>
+                <li class="delayed">Navigation</li>
+            </ul>
+        </section>
+
+        <section class="slide title">
+          <h1>Getting Set Up</h1>
+        </section>
+        
+        <section class="slide">
+          <h2>The WIFI</h2>
+          <p>Name: The Lab</p>
+          <p>Password: Thisisthelab</p>
+
+          <h2>Our text editor: <a href="http://www.sublimetext.com/3">Sublime Text <strong>THREE</strong>!</a></h2>
+          <p>No Dreamweaver, Word, etc. please!</p>
+        </section>
+
+        <section class="slide">
+
+          <h2>Our Browser: <a href="https://www.google.com/chrome/?">Google Chrome</a></h2>
+          <p>Firefox, Safari, and IE 10+ are great, but their dev tools are different so stick to Chrome for this class please!</p>
+
+          <h2>Our Emulator: the Chrome Web Inspector</h2>
+          <p>Right click > "Inspect Element" > ensure little phone is blue!</p>
+          <img src="framework/img/emulation-mode.jpg" alt"emulation mode">
+        </section>
+
+        <section class="slide title">
+            <h1>What is Responsive Design?</h1>
+        </section>
+        
+        <section class="slide">
+            <h2>Different types of web design:</h2>
+            <p>In order to understand mobile/responsive web design and development, we have to understand what our options are:</p>
+            <ul>
+                <li>Fixed</li>
+                <li>Fluid</li>
+                <li>Adaptive</li>
+                <li>Responsive</li>
+            </ul>
+        </section>
+
+        <section class="slide">
+            <h2>Fixed web design</h2>
+                <ul>
+                    <li class="delayed">What it sounds like!</li>
+                    <li class="delayed">Everything has a set width (eg. 960px). A holdover from before mobile "smart" devices were common.</li>
+                    <li class="delayed">Resize the browser, or look at it on a mobile screen and nothing will change</li>
+                    <li class="delayed">You'll need an "m dot" site if you want something mobile friendly :( </li>
+                </ul>
+                <p class="delayed">Example: <a href="http://toronto.ca">toronto.ca</a> </br>(open this up on your phone or use the web inspector)</p>
+                <p class="delayed">Example: <a href="https://m.facebook.com/">m.facebook.com</a></p>
+        </section>
+
+        <section class="slide">
+            <h2>Fluid web design</h2>
+                <ul>
+                    <li class="delayed">Based on percentages</li>
+                    <li class="delayed">Each block of content takes up some percentage of the page, for example a sidebar with a width of ~30% and main section with a width of ~70%</li>
+                    <li class="delayed">When you resize the browser, the blocks of content will resize relative to the size of the page (aka the "viewport")</li>
+                    <li class="delayed"><strong>Not</strong> made for specific devices. Just reducing the width of your content is usually not the best experience for small screens, doesn't give us enough control.</li>
+                </ul>
+        </section>
+
+        <section class="slide">
+            <h2>Adaptive web design</h2>
+                <ul>
+                    <li class="delayed">Uses a series fixed layouts</li>
+                    <li class="delayed">Then adds in media queries to target specific viewport sizes</li>
+                    <li class="delayed">The content itself changes</li>
+                    <li class="delayed">Best to think of it as a <em>set</em> of fixed layouts that are envoked in response to the device size</li>
+                </ul>
+                <p class="delayed">Example: <a href="http://goo.gl/lUyNrZ" alt="Screaming Frog website">goo.gl/lUyNrZ</a></p>
+        </section>
+
+        <section class="slide">
+            <h2>And finally...responsive web design!</h2>
+                <ul>
+                    <li class="delayed">Uses a fluid grid layout to get that sweet free adaptability</li>
+                    <li class="delayed"><em>Also</em> uses media queries to change the look and feel depending on device size</li>
+                    <li class="delayed">So your grid is both <strong>flexible</strong> inbetween common device sizes, and designed with <strong>breakpoints</strong> so that content is presented in the most suitable way for the device.</li>
+                    <li class="delayed">Content stays largely the same or similar.</li>
+                    <p class="delayed">Example: <a href="http://goo.gl/JNfJ5X">goo.gl/JNfJ5X</a></p>
+                    <p class="delayed">What do you notice about the changing layout?</p>
+                </ul>
+        </section>
+
+        <section class="slide">
+            <h1>Recap</h1>
+            <h2>This website illustrates all the differences we just discussed:</h2>
+            <p><a href="http://liquidapsive.com/" alt="Liquidapsive site">liquidapsive.com</a></p>
+            <p>Let's head over there and take a look and try to point out the differences.</p>
+        </section>
+
+        <section class="slide">
+            <h2>One more concept: mobile-first design</h2>
+            <p>We used to design with only a desktop in mind, this has changed with smartphones and tablets, giving rise to "mobile first design"</p>
+            <p>What is it?</p>
+            <li class="delayed">Design an experience for mobile devices first, then desktop, making mobile integral, not an afterthought</li>
+            <li class="delayed">"Graceful Degradation" and "Progressive Enhancement" - fancy words for simple things</li>
+            <li class="delayed">A bit difficult to think this way, but worth it to give all users the best experience possible</li>
+            <li class="delayed">This link is a great overview: <a href="http://designshack.net/articles/css/mobilefirst/" alt="design hack blog">designshack.net/articles/css/mobilefirst/</a></li>
+        </section>
+        
+        <section class="slide">
+          <blockquote>"When you lose 80% of your screen real estate, all the extraneous bloat that tends to finds its way onto large screen designs doesn’t seem so attractive or necessary anymore. Mobile provides a great opportunity to reevaluate what content/functionality is necessary and gives us an opportunity to strip away the cruft across the board (and not just for mobile users either). These constraints also encourage ease-of-use, intuitiveness and speed as essential ingredients to a good user experience."
+          </blockquote>
+          <cite><a href="http://bradfrostweb.com/blog/mobile/the-many-faces-of-mobile-first/">Brad Frost, The Many Faces of Mobile First</a></cite>
+        </section>
+
+        <section class="slide title">
+          <h1>Crash Course in HTML5</h1>
+        </section>
+
+        <section class="slide">
+        <h2>A bit of background info</h2>
+          <p>HTML5, or "HyperText Markup Language" is what we wrap the <strong>content</strong> of our site in. It's the only thing you truly need to have a website.</p>
+          <p>However, it takes on default styles of the browser. Uuuuugly. We'll learn how to override these styles in a bit with CSS, which is where we do all our cosmetic changes.</p>
+          <p>For now, let's open up our starter HTML file, <strong>html-ex1.html</strong></p>
+        </section>
+
+        <section class="slide">
+          <h2>This is it!</h2>
+          <p>This is everthing you need for your HTML file to work properly in a browser. Go ahead and type anything inside the <code>body</code> tags</p>
+          <p>Then right click and select "open in browser" to see the results!</p>
+        </section>
+
+        <section class="slide">
+          <h2>Tags/Elements</h2>
+          <p>Those things with the angled brackets are called HTML "elements", they tell the browser what kind of content each of the bits of your website is.</p>
+          <p>IMPORTANT NOTE: remember, HTML is about content, it has default browser styles but it is not for styling your document. That's what CSS is for, and we need to keep the both separate!</p>
+          <p>The best way to understand this is to look at an example, so open up our second HTML example file, <strong>html-ex2.html</strong></p>
+        </section>
+        
+        <section class="slide">
+          
+        </section>
+
+<!--         <section class="slide">
             <h2>Syntax Highlighting</h2>
             <p>Code highlighting is provided by <a href="http://highlightjs.org">highlight.js</a> and will be applied to any code wrapped in <code>&lt;pre>&lt;code>&lt;/code>&lt;/pre></code>. The syntax highlighting theme files can be found in <strong>framework > css > highlightjs-themes</strong>. If you wish to change it, add the css file there and update the css link. Visit <a href="http://highlightjs.org">highlight.js</a> to see the full list of supported languages, themes and other usage information.</p>
 
@@ -86,62 +237,11 @@ sayHello();
     &lt;/head&gt;
     &lt;body&gt;
     &lt;/body&gt;
-&lt;/html></code></pre>
-        </section>
-
-        <section class="slide" data-markdown>
-##Markdown example
-
-Write in Markdown! Include the `data-markdown` attribute in the sectin tag. See the [documentation for markdown syntax](http://daringfireball.net/projects/markdown/).  Both text and code blocks are supported at this time.
-
-Code blocks need to be denoted either by three backticks (`) or by tabbing the content in one indent (at least 4 spaces).  **Tabbing to create a code block won't work in this slide deck if your content begins tabbed in in your source code.** 
-
-Also, if you need to use any HTML, the entire slide has to be written in HTML and the markdown syntax will no longer work.
-
-You can specify the language of the code block by following the three backticks immediately by the language name.  View the source to see this in action.
-
-#### Javascript Example
-
-```javascript
-var myJSVariable = "Syntax Highting for Javascript";
-```
-
-#### CSS Example
-
-```css
-.css-selector{
-    highlight : syntax;
-}
-```
-
-#### HTML Example
-For HTML, set `xml` as the language to get nicer syntax highlighting.  Also, the left angled bracket of the HTML tag needs to be escaped. Here's a handy tool for creating escaped result with HTML entities: http://www.htmlescape.net/htmlescape_tool.html
-
-```xml
-&lt;header>
-    &lt;h1>I'm an H1!&lt;/h1>
-    &lt;p>This is a paragraph&lt;/p>
-&lt;/header>
-
-```
-#### indented example
-
-    code block that has to guess at the language and likely gets it wrong.  It thinks this is applescript.
-
+&lt;/html></code></pre>s
         </section>
       
-        <section class="slide">
-            <h2>Incremental display of content</h2>
-            <p>Use the arrow keys to reveal each line.  To use, just add a <code>class="delayed"</code>.</p>
-            <ul>
-                <li class="delayed">Make sure your computer is setup</li>
-                <li class="delayed">Web development breakdown</li>
-                <li class="delayed">Dive into HTML</li>
-                <li class="delayed">CSS fundamentals</li>
-            </ul>
-        </section>
 
-        <section class="slide">
+ <!--        <section class="slide">
             <h2>CSS demos</h2>
             <p>You can include in-slide CSS demos. In this example, The whole slide will get the CSS applied to it. Go ahead, add/change/remove some CSS!</p>
 
@@ -164,9 +264,9 @@ padding: 20px;</textarea>
             <p>Just like the previous example, the CSS is added in a <code>textarea</code> element but also include a <code>data-subject</code> attribute.</p>  
 
             <p>In the element to be targeted, add an <code>id</code> with a value that matches the <code>data-subject</code> of the  <code>textarea</code> and add a class of <code>.example</code> to add the border style. (View the source for this slide.)</p>
-        </section>
+        </section> -->
 
-        <section class="slide">
+<!--         <section class="slide">
             <h2>Presentation mode</h2>
 
             <p>This slide has presenter notes. They are only visible in presenter view (Ctrl+P or Shift+P).  Just add the <code>.presenter-notes</code> class to the element container the notes.
@@ -176,8 +276,8 @@ padding: 20px;</textarea>
             <p class="presenter-notes">
                 Notes! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt soluta sit maiores nihil doloribus tempore dolor debitis a repudiandae recusandae natus officia, ad asperiores quaerat facilis nobis illo alias? Quaerat.
             </p>
-        </section>
-
+        </section> -->
+<!-- 
         <section class="slide" data-markdown>
             ##CSS Customizations
 
@@ -188,8 +288,8 @@ padding: 20px;</textarea>
             The text in the slide can automatically scale based on window size. If you want to turn this feature "on" or off", in **framework > sass > _variables.scss** under font sizes, use the `rem` values for scalable text and `px` values for non-scalable text. (You can still zoom in with the pixel sized text.)
             
             Avoid changing the base styles files (`_mixins.scss`, `_variables.scss` and `theme-llc.scss`). Put all of your customizations and workshop specific styles in workshop.scss.  If you'd like to add an improvement or enhancement, please submit a pull request or email [christina@ladieslearningcode.com](mailto:christina@ladieslearningcode.com).
-        </section>
-
+        </section> -->
+<!-- 
         <section class="slide" data-markdown>
             ##Other Customizations
 
@@ -200,7 +300,7 @@ padding: 20px;</textarea>
             Since most, if not all, links included in the workshops are to external resources, all links open in a new window to avoid participants clicking away from the slide presentations.  Note that this feature is included using `&lt;base target="_blank"&gt;` added just after the opening `body` tag. 
 
             (See more about the [`base`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/base) tag.)
-        </section>
+        </section> -->
 
         <!-- Last slide -->
         <section class="slide">
