@@ -1,0 +1,47 @@
+A list of important HTML elements:
+
+<html></html>
+
+METADATA:
+<head></head>
+<meta>
+<link>
+<title></title>
+
+
+CONTENT SECTIONS:
+<body></body>
+<section></section>
+<nav></nav>
+<article></article>
+<aside></aside>
+<header></header>
+<main></main>
+<footer></footer>
+<h1></h1>, <h2></h2>, <h3></h3>, <h4></h4>, <h5><h5>, <h6></h6>
+
+
+"GROUPING" CONTENT:
+<p></p>
+<ol></ol>
+<ul></ul>
+<li></li>
+<div></div>
+
+
+INLINE SEMANTIC ELEMENTS:
+<span></span>
+<a></a>
+<em></em>
+<strong></strong>
+<br>
+
+
+EMBEDDED CONTENT (in this case,media):
+<img>
+<video></video>
+
+*************************************************************
+For extra fun times, check out the <form> and <table> elements - forms are used all over on websites, tables are used much less these days. But they're still both important tags!
+
+NOTE: the elements above that don't have closing tags don't need them!
