@@ -239,6 +239,7 @@
           <p>Don't worry about what each of these are, we'll go over that very soon. Just look at the structure.</p>
           <img src="framework/img/DOM_tree.png" />
         </section>
+
         <section class="slide">
           <h2>What are all the Elements?</h2>
           <p>We'd be here all day if we had to go over every single HTML5 element - there's so many!</p>
@@ -246,49 +247,42 @@
           <p>Don't worry, you don't by any means need to memorize all of these!</p>
           <p>For your reference, I've made a list of the most commonly used tags in the <strong>examples folder</strong> called <strong>html-elements.txt</strong>. Take a look!</p>
         </section>
-<!--         <section class="slide">
-            <h2>Syntax Highlighting</h2>
-            <p>Code highlighting is provided by <a href="http://highlightjs.org">highlight.js</a> and will be applied to any code wrapped in <code>&lt;pre>&lt;code>&lt;/code>&lt;/pre></code>. The syntax highlighting theme files can be found in <strong>framework > css > highlightjs-themes</strong>. If you wish to change it, add the css file there and update the css link. Visit <a href="http://highlightjs.org">highlight.js</a> to see the full list of supported languages, themes and other usage information.</p>
 
-            <h3>JavaScript</h3>
-<pre><code>var greeting = "Hello!";
-
-function sayHello() {
-    console.log(greeting);
-}
-
-sayHello();
-</code></pre>
-
-            <h3>CSS</h3>
-<pre><code>body {
-    margin: 0;
-    padding: 0;
-}</code></pre>
-
-            <p>For HTML, the left tag, <code><</code>, needs to be escaped. Sometimes for HTML snippets, the plugin, may not register it properly as HTML.  If that is the case, add an <code>.xml</code> class to the <code>pre</code> tag. Here's an online escape tool: <a href="http://www.htmlescape.net/htmlescape_tool.html">http://www.htmlescape.net/htmlescape_tool.html</a></p>
-
-            <h3>HTML</h3>
-            <pre><code>&lt;!DOCTYPE html>
-&lt;html&gt;
-    &lt;head&gt;
-        &lt;title&gt;&lt;/title&gt;
-    &lt;/head&gt;
-    &lt;body&gt;
-    &lt;/body&gt;
-&lt;/html></code></pre>s
+        <section class="slide">
+          <h2>One more thing...HTML Attributes!</h2>
+          <p>Elements can have things called "attributes". There's also lots of attributes, but don't worry there's only a few you'll need to know for this workshop:</p>
+          <ul>
+            <li>"class" or "id", used mostly for styling</li>
+            <li>"href", used in the opening anchor tag, it contains a URL for the link</li>
+            <li>"alt", used as alternate text if the website can't represent the content or a screen reader is being used</li>
+            <li>"src", meaning source, used mostly for images, gives the url path for the embedded content</li>
+            <li></li>
+          </ul>
+          <p><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes" alt="List of HTML attributes">Here's another handy list</a> of all of them!</p>
         </section>
-      
 
- <!--        <section class="slide">
-            <h2>CSS demos</h2>
-            <p>You can include in-slide CSS demos. In this example, The whole slide will get the CSS applied to it. Go ahead, add/change/remove some CSS!</p>
-
-            <textarea class="snippet">background-color: lightblue;
-font-family: "Times New Roman", serif;</textarea>
-
-            <p>Just add the CSS to a <code>textarea</code> with a class of <code>.snippet</code>. (View the source for this slide.)</p>
+        <section class="slide">
+          <h2>Enough talk, more code!</h2>
+          <p>Now that we've gone over a lot, let's go through an HTML document together and practice what we've learned!</p>
+          <p>Open up <strong>html-ex3.html</strong> from your examples folder.</p>
         </section>
+
+        <section class="slide title">
+          <h1>Goodbye Defaults, Hello CSS!</h1>
+        </section>
+
+        <section class="slide">
+          <h2>Intro to CSS</h2>
+          <p>CSS stands for "Cascading Style Sheets"</p>
+          <p>CSS is the type of document we use to tell the browser how to style our HTML document - it's for making things pretty <strong>and usable/accessible</strong></p>
+          <p>Just like HTML, CSS has it's own way of writing it that we have to learn. It looks a little something like this:</p>
+          <textarea class="snippet">background-color: lightblue;
+          font-family: "Times New Roman", serif;</textarea>
+        </section>
+
+
+
+        
 
         <section class="slide">
             <h2>More CSS demos</h2>

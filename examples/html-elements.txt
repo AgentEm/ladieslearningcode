@@ -1,6 +1,8 @@
 A list of important HTML elements:
 
+THE "ROOT" ELEMENT:
 <html></html>
+
 
 METADATA:
 <head></head>
@@ -44,4 +46,6 @@ EMBEDDED CONTENT (in this case,media):
 *************************************************************
 For extra fun times, check out the <form> and <table> elements - forms are used all over on websites, tables are used much less these days. But they're still both important tags!
 
-NOTE: the elements above that don't have closing tags don't need them!
+The whole list: https://developer.mozilla.org/en/docs/Web/Guide/HTML/HTML5/HTML5_element_list
+
+NOTE: the elements above that don't have closing tags don't need them! It's not a typo :)
