@@ -217,9 +217,27 @@
         </section>
 
         <section class="slide">
-            
+            <h2>Siblings, Parents, and Children</h2>
+            <p>Elements can have "relationships" with other elements in the HTML document.</p>
+            <p>If you put one element inside of another, the element on the outside is the <strong>"parent"</strong> element, while the one inside is the <strong>"child"</strong> element. You can have many child elements inside of a parent, but they all only have one parent.</p>
+            <p>Two or more elements that are both children of the <em>same</em> element are called <strong>"siblings"</strong> - they are on the same level as each other. For example the <code>&lt;head&gt;&lt;/head&gt;</code> and <code>&lt;body&gt;&lt;/body&gt;</code>elements in every HTML document</p>
         </section>
-
+        <section class="slide">
+            <h2>Parent, Child, Siblings Example</h2>
+            <pre><code>
+&lt;body&gt; &lt;!--this body element is a parent to the div element and normally a child of the html element--&gt;
+  &lt;div&gt; &lt;!--this div is a child of the body element, and a parent of the p elements--&gt;
+    &lt;p&gt;I am a sibling of the p below me! I am also a child of the div.&lt;/p&gt;
+    &lt;p&gt;I am a sibling of the p above me! I am also a child of the div&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/body&gt;
+            </code></pre>
+            <p>Notice the way that the tags are indented, so that you can easily read the HTML and see what is a child, parent, and sibling of what elements. This will come in handy later, so keep up this way of indenting (2 spaces or one tab)</p>
+        </section>
+        <section class="slide">
+          <h2>HTML relationships:</h2>
+          <img src="framework/img/DOM_tree.png" />
+        </section>
 <!--         <section class="slide">
             <h2>Syntax Highlighting</h2>
             <p>Code highlighting is provided by <a href="http://highlightjs.org">highlight.js</a> and will be applied to any code wrapped in <code>&lt;pre>&lt;code>&lt;/code>&lt;/pre></code>. The syntax highlighting theme files can be found in <strong>framework > css > highlightjs-themes</strong>. If you wish to change it, add the css file there and update the css link. Visit <a href="http://highlightjs.org">highlight.js</a> to see the full list of supported languages, themes and other usage information.</p>
