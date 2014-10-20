@@ -274,17 +274,62 @@
         <section class="slide">
           <h2>Intro to CSS</h2>
           <p>CSS stands for "Cascading Style Sheets"</p>
-          <p>CSS is the type of document we use to tell the browser how to style our HTML document - it's for making things pretty <strong>and usable/accessible</strong></p>
+          <p>CSS is what we use to tell the browser how to style our HTML document - it's for making things pretty <strong>and usable/accessible</strong></p>
           <p>Just like HTML, CSS has it's own way of writing it that we have to learn. It looks a little something like this:</p>
           <textarea class="snippet">background-color: lightblue;
           font-family: "Times New Roman", serif;</textarea>
         </section>
-
-
-
         
+        <section class="slide">
+          <h2>CSS and HTML</h2>
+          <p>A CSS document is made up of a bunch of lines of code, or "rules", that keep referring back to the HTML elements in our HTML document</p>
+          <p>These rules are always made up of a <strong>selector</strong> and one or more <strong>declarations</strong></p>
+          <p>Each declaration has a <strong>property</strong> and a <strong>value</strong></p>
+          <p>The selector tells what element(s) to apply the styling to</p>
+          <p>The declaration contains what styles to apply</p>  
+        </section>
 
         <section class="slide">
+          <h2>An Example</h2>
+          <pre><code>
+            body {
+              background-color: pink;
+              color: white;
+              font-family: Helvetica, Arial, sans-serif;
+              font-size: 16px;
+            }
+
+            p {
+              border: 1px solid #333;
+              color: #000;
+              font-weight: italic;
+            }
+          </code></pre>
+          <p>Here we have two selectors (body and p) and they each have their own sets of declatarions inside the { } brackets. The body selector has four declarations, while the p selector has three.</p>
+        </section>
+
+        <section class="slide">
+          <h2>An Example cont.</h2>
+          <p></p>  
+        </section>
+
+        <section class="slide">
+          <h2></h2>  
+        </section>
+
+        <section class="slide">
+          <h2></h2>  
+        </section>
+
+        <section class="slide">
+          <h2></h2>  
+        </section>
+
+        <section class="slide">
+          <h2></h2>  
+        </section>
+
+        <!--<section class="slide">
             <h2>More CSS demos</h2>
             <p>You can also target specific elements rather than the whole slide.</p>
             <textarea class="snippet" data-subject="#test">color: slateblue;
@@ -338,7 +383,7 @@ padding: 20px;</textarea>
         <!-- Last slide -->
         <section class="slide">
             <h2>Thank you!</h2>
-            <p>Closing remarks</p>
+            <p>My email: <a href="mailto:eeporta@gmail.com">eeporta@gmail.com</a></p>
             <p class="attribution">Slide deck created with <a href="https://github.com/LeaVerou/csss">Lea Verou's CSS-based SlideShow System</a> and <a href="http://lab.hakim.se/reveal-js/">reveal.js</a>.</p>
         </section>
 
