@@ -3,72 +3,21 @@
 	@author Christina Truong | christinatruong.com
 	@version 1.0
 */
-
 /* Global styles
 -----------------*/
-
 /* apply a natural box layout model to all elements */
-
-@media -sass-debug-info {
-  filename {
-    font-family: file\:\/\/\/Users\/emilyporta\/Desktop\/Sites\/llc-slidedeck-template\/framework\/sass\/theme-llc\.scss;
-  }
-
-  line {
-    font-family: \0000314;
-  }
-}
-
-*,
-*:before,
-*:after {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-}
+*, *:before, *:after {
+  box-sizing: border-box; }
 
 /* updated clearfix hack: 
 http://css-tricks.com/snippets/css/clear-fix/ */
-
-@media -sass-debug-info {
-  filename {
-    font-family: file\:\/\/\/Users\/emilyporta\/Desktop\/Sites\/llc-slidedeck-template\/framework\/sass\/theme-llc\.scss;
-  }
-
-  line {
-    font-family: \0000320;
-  }
-}
-
 .group:after {
   content: "";
   display: table;
-  clear: both;
-}
-
-@media -sass-debug-info {
-  filename {
-    font-family: file\:\/\/\/Users\/emilyporta\/Desktop\/Sites\/llc-slidedeck-template\/framework\/sass\/theme-llc\.scss;
-  }
-
-  line {
-    font-family: \0000326;
-  }
-}
+  clear: both; }
 
 html {
-  font-size: 62.5%;
-}
-
-@media -sass-debug-info {
-  filename {
-    font-family: file\:\/\/\/Users\/emilyporta\/Desktop\/Sites\/llc-slidedeck-template\/framework\/sass\/theme-llc\.scss;
-  }
-
-  line {
-    font-family: \0000330;
-  }
-}
+  font-size: 62.5%; }
 
 body {
   padding: 0;
@@ -77,182 +26,48 @@ body {
   color: #222222;
   border-top: 4px solid #b109aa;
   -webkit-font-smoothing: antialiased;
-  background: #ecf0f1;
-}
+  background: #ecf0f1; }
 
-@-moz-document url-prefix()  {
-  /* line 40, theme-llc.scss */
-
+@-moz-document url-prefix() {
   body {
-    font-weight: 300;
-  }
-}
-
-@media -sass-debug-info {
-  filename {
-    font-family: file\:\/\/\/Users\/emilyporta\/Desktop\/Sites\/llc-slidedeck-template\/framework\/sass\/theme-llc\.scss;
-  }
-
-  line {
-    font-family: \0000345;
-  }
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+    font-weight: 300; } }
+h1, h2, h3, h4, h5, h6 {
   font-family: "Quicksand", sans-serif;
   line-height: 1.25;
   text-transform: uppercase;
-  letter-spacing: -0.05em;
-}
-
-@media -sass-debug-info {
-  filename {
-    font-family: file\:\/\/\/Users\/emilyporta\/Desktop\/Sites\/llc-slidedeck-template\/framework\/sass\/theme-llc\.scss;
-  }
-
-  line {
-    font-family: \0000351;
-  }
-}
+  letter-spacing: -0.05em; }
 
 h1 {
   font-weight: 400;
-  font-size: 75px;
-}
+  font-size: 75px; }
 
-@media -sass-debug-info {
-  filename {
-    font-family: file\:\/\/\/Users\/emilyporta\/Desktop\/Sites\/llc-slidedeck-template\/framework\/sass\/theme-llc\.scss;
-  }
-
-  line {
-    font-family: \0000355;
-  }
-}
-
-h1,
-h2 {
+h1, h2 {
   margin: 0;
-  color: #b109aa;
-}
-
-@media -sass-debug-info {
-  filename {
-    font-family: file\:\/\/\/Users\/emilyporta\/Desktop\/Sites\/llc-slidedeck-template\/framework\/sass\/theme-llc\.scss;
-  }
-
-  line {
-    font-family: \0000359;
-  }
-}
+  color: #b109aa; }
 
 h2 {
-  font-size: 40px;
-}
-
-@media -sass-debug-info {
-  filename {
-    font-family: file\:\/\/\/Users\/emilyporta\/Desktop\/Sites\/llc-slidedeck-template\/framework\/sass\/theme-llc\.scss;
-  }
-
-  line {
-    font-family: \0000362;
-  }
-}
+  font-size: 40px; }
 
 h3 {
   margin-bottom: 5px;
-  font-size: 28px;
-}
-
-@media -sass-debug-info {
-  filename {
-    font-family: file\:\/\/\/Users\/emilyporta\/Desktop\/Sites\/llc-slidedeck-template\/framework\/sass\/theme-llc\.scss;
-  }
-
-  line {
-    font-family: \0000366;
-  }
-}
-
-h3 + p {
-  margin-top: 0;
-}
-
-@media -sass-debug-info {
-  filename {
-    font-family: file\:\/\/\/Users\/emilyporta\/Desktop\/Sites\/llc-slidedeck-template\/framework\/sass\/theme-llc\.scss;
-  }
-
-  line {
-    font-family: \0000371;
-  }
-}
+  font-size: 28px; }
+  h3 + p {
+    margin-top: 0; }
 
 a {
-  color: #444444;
-}
-
-@media -sass-debug-info {
-  filename {
-    font-family: file\:\/\/\/Users\/emilyporta\/Desktop\/Sites\/llc-slidedeck-template\/framework\/sass\/theme-llc\.scss;
-  }
-
-  line {
-    font-family: \0000374;
-  }
-}
-
-a:hover {
-  text-decoration: none;
-  color: #b109aa;
-}
-
-@media -sass-debug-info {
-  filename {
-    font-family: file\:\/\/\/Users\/emilyporta\/Desktop\/Sites\/llc-slidedeck-template\/framework\/sass\/theme-llc\.scss;
-  }
-
-  line {
-    font-family: \0000380;
-  }
-}
+  color: #444444; }
+  a:hover {
+    text-decoration: none;
+    color: #b109aa; }
 
 pre code {
-  overflow-y: auto;
-}
-
-@media -sass-debug-info {
-  filename {
-    font-family: file\:\/\/\/Users\/emilyporta\/Desktop\/Sites\/llc-slidedeck-template\/framework\/sass\/theme-llc\.scss;
-  }
-
-  line {
-    font-family: \0000383;
-  }
-}
+  overflow-y: auto; }
 
 code {
   font-family: Monaco, Andale Mono, monospace;
   color: #444;
   padding: 1px 4px;
-  font-size: 20px;
-}
-
-@media -sass-debug-info {
-  filename {
-    font-family: file\:\/\/\/Users\/emilyporta\/Desktop\/Sites\/llc-slidedeck-template\/framework\/sass\/theme-llc\.scss;
-  }
-
-  line {
-    font-family: \0000390;
-  }
-}
+  font-size: 20px; }
 
 footer {
   position: fixed;
@@ -261,286 +76,70 @@ footer {
   z-index: 100;
   text-align: center;
   background: rgba(255, 255, 255, 0.6);
-  font-size: 14px;
-}
-
-@media -sass-debug-info {
-  filename {
-    font-family: file\:\/\/\/Users\/emilyporta\/Desktop\/Sites\/llc-slidedeck-template\/framework\/sass\/theme-llc\.scss;
-  }
-
-  line {
-    font-family: \0000399;
-  }
-}
-
-footer i {
-  color: #b109aa;
-}
-
-@media -sass-debug-info {
-  filename {
-    font-family: file\:\/\/\/Users\/emilyporta\/Desktop\/Sites\/llc-slidedeck-template\/framework\/sass\/theme-llc\.scss;
-  }
-
-  line {
-    font-family: \00003102;
-  }
-}
-
-footer p {
-  margin: 4px 0;
-}
-
-@media -sass-debug-info {
-  filename {
-    font-family: file\:\/\/\/Users\/emilyporta\/Desktop\/Sites\/llc-slidedeck-template\/framework\/sass\/theme-llc\.scss;
-  }
-
-  line {
-    font-family: \00003105;
-  }
-}
-
-footer .instructions {
-  float: right;
-  margin-right: 20px;
-}
-
-@media -sass-debug-info {
-  filename {
-    font-family: file\:\/\/\/Users\/emilyporta\/Desktop\/Sites\/llc-slidedeck-template\/framework\/sass\/theme-llc\.scss;
-  }
-
-  line {
-    font-family: \00003109;
-  }
-}
-
-footer .license {
-  float: left;
-  margin-left: 20px;
-}
-
-@media -sass-debug-info {
-  filename {
-    font-family: file\:\/\/\/Users\/emilyporta\/Desktop\/Sites\/llc-slidedeck-template\/framework\/sass\/theme-llc\.scss;
-  }
-
-  line {
-    font-family: \00003113;
-  }
-}
-
-footer .license img {
-  vertical-align: middle;
-}
+  font-size: 14px; }
+  footer i {
+    color: #b109aa; }
+  footer p {
+    margin: 4px 0; }
+  footer .instructions {
+    float: right;
+    margin-right: 20px; }
+  footer .license {
+    float: left;
+    margin-left: 20px; }
+    footer .license img {
+      vertical-align: middle; }
 
 /* Base styles for slides
 --------------------------*/
-
-@media -sass-debug-info {
-  filename {
-    font-family: file\:\/\/\/Users\/emilyporta\/Desktop\/Sites\/llc-slidedeck-template\/framework\/sass\/theme-llc\.scss;
-  }
-
-  line {
-    font-family: \00003122;
-  }
-}
-
 .slide {
   padding: 45px 5%;
-  height: 96%;
-}
-
-@media -sass-debug-info {
-  filename {
-    font-family: file\:\/\/\/Users\/emilyporta\/Desktop\/Sites\/llc-slidedeck-template\/framework\/sass\/theme-llc\.scss;
-  }
-
-  line {
-    font-family: \00003126;
-  }
-}
-
-.slide img {
-  max-width: 100%;
-}
-
-@media -sass-debug-info {
-  filename {
-    font-family: file\:\/\/\/Users\/emilyporta\/Desktop\/Sites\/llc-slidedeck-template\/framework\/sass\/theme-llc\.scss;
-  }
-
-  line {
-    font-family: \00003129;
-  }
-}
-
-.slide:target {
-  overflow: auto;
-}
-
-@media -sass-debug-info {
-  filename {
-    font-family: file\:\/\/\/Users\/emilyporta\/Desktop\/Sites\/llc-slidedeck-template\/framework\/sass\/theme-llc\.scss;
-  }
-
-  line {
-    font-family: \00003132;
-  }
-}
-
-.slide.js-fiddle > iframe:only-of-type {
-  position: static;
-  width: 525px;
-  height: 350px;
-}
-
-@media -sass-debug-info {
-  filename {
-    font-family: file\:\/\/\/Users\/emilyporta\/Desktop\/Sites\/llc-slidedeck-template\/framework\/sass\/theme-llc\.scss;
-  }
-
-  line {
-    font-family: \00003137;
-  }
-}
-
-.slide.centered {
-  text-align: center;
-}
-
-@media -sass-debug-info {
-  filename {
-    font-family: file\:\/\/\/Users\/emilyporta\/Desktop\/Sites\/llc-slidedeck-template\/framework\/sass\/theme-llc\.scss;
-  }
-
-  line {
-    font-family: \00003140;
-  }
-}
-
-.slide.centered img {
-  width: 60%;
-}
+  height: 96%; }
+  .slide:after {
+    content: " ";
+    display: block;
+    height: 200px; }
+  .slide img {
+    max-width: 100%; }
+  .slide:target {
+    overflow: auto; }
+  .slide.js-fiddle > iframe:only-of-type {
+    position: static;
+    width: 525px;
+    height: 350px; }
+  .slide.centered {
+    text-align: center; }
+    .slide.centered img {
+      width: 60%; }
 
 /* vertical align heading */
-
-@media -sass-debug-info {
-  filename {
-    font-family: file\:\/\/\/Users\/emilyporta\/Desktop\/Sites\/llc-slidedeck-template\/framework\/sass\/theme-llc\.scss;
-  }
-
-  line {
-    font-family: \00003148;
-  }
-}
-
 .slide.title {
-  -webkit-transform-style: preserve-3d;
-  -ms-transform-style: preserve-3d;
   transform-style: preserve-3d;
   padding-left: 8%;
-  padding-right: 8%;
-}
-
-@media -sass-debug-info {
-  filename {
-    font-family: file\:\/\/\/Users\/emilyporta\/Desktop\/Sites\/llc-slidedeck-template\/framework\/sass\/theme-llc\.scss;
-  }
-
-  line {
-    font-family: \00003153;
-  }
-}
-
-.slide.title h1,
-.slide.title h2 {
-  position: relative;
-  text-align: center;
-  top: 40%;
-  -webkit-transform: translateY(-40%);
-  -ms-transform: translateY(-40%);
-  transform: translateY(-40%);
-}
-
-@media -sass-debug-info {
-  filename {
-    font-family: file\:\/\/\/Users\/emilyporta\/Desktop\/Sites\/llc-slidedeck-template\/framework\/sass\/theme-llc\.scss;
-  }
-
-  line {
-    font-family: \00003159;
-  }
-}
-
-.slide.title h2 {
-  color: #444444;
-}
+  padding-right: 8%; }
+  .slide.title h1, .slide.title h2 {
+    position: relative;
+    text-align: center;
+    top: 40%;
+    transform: translateY(-40%); }
+  .slide.title h2 {
+    color: #444444; }
 
 /* Progress Bar */
-
-@media -sass-debug-info {
-  filename {
-    font-family: file\:\/\/\/Users\/emilyporta\/Desktop\/Sites\/llc-slidedeck-template\/framework\/sass\/theme-llc\.scss;
-  }
-
-  line {
-    font-family: \00003165;
-  }
-}
-
 #timer {
   height: 4px;
   line-height: 4px;
-  background: black;
-}
-
-@media -sass-debug-info {
-  filename {
-    font-family: file\:\/\/\/Users\/emilyporta\/Desktop\/Sites\/llc-slidedeck-template\/framework\/sass\/theme-llc\.scss;
-  }
-
-  line {
-    font-family: \00003170;
-  }
-}
-
-#timer:before {
-  content: "";
-}
+  background: black; }
+  #timer:before {
+    content: ""; }
 
 /* textarea for dynamic CSS demos */
-
-@media -sass-debug-info {
-  filename {
-    font-family: file\:\/\/\/Users\/emilyporta\/Desktop\/Sites\/llc-slidedeck-template\/framework\/sass\/theme-llc\.scss;
-  }
-
-  line {
-    font-family: \00003180;
-  }
-}
-
 textarea.snippet {
   width: 100%;
   border: 1px solid #222;
   padding: 15px 20px;
   margin-bottom: 15px;
-  font-family: Monaco, Andale Mono, monospace;
-}
-
-@media -sass-debug-info {
-  filename {
-    font-family: file\:\/\/\/Users\/emilyporta\/Desktop\/Sites\/llc-slidedeck-template\/framework\/sass\/theme-llc\.scss;
-  }
-
-  line {
-    font-family: \00003187;
-  }
-}
+  font-family: Monaco, Andale Mono, monospace; }
 
 .edit {
   float: right;
@@ -549,305 +148,85 @@ textarea.snippet {
   padding: 2px 7px;
   position: relative;
   bottom: -33px;
-  right: 8px;
-}
+  right: 8px; }
 
 /* table styles */
-
-@media -sass-debug-info {
-  filename {
-    font-family: file\:\/\/\/Users\/emilyporta\/Desktop\/Sites\/llc-slidedeck-template\/framework\/sass\/theme-llc\.scss;
-  }
-
-  line {
-    font-family: \00003200;
-  }
-}
-
 table th {
-  font-weight: 400;
-}
-
-@media -sass-debug-info {
-  filename {
-    font-family: file\:\/\/\/Users\/emilyporta\/Desktop\/Sites\/llc-slidedeck-template\/framework\/sass\/theme-llc\.scss;
-  }
-
-  line {
-    font-family: \00003203;
-  }
-}
-
+  font-weight: 400; }
 table img {
-  width: 100%;
-}
+  width: 100%; }
 
 /* Creates border for slide examples */
-
-@media -sass-debug-info {
-  filename {
-    font-family: file\:\/\/\/Users\/emilyporta\/Desktop\/Sites\/llc-slidedeck-template\/framework\/sass\/theme-llc\.scss;
-  }
-
-  line {
-    font-family: \00003210;
-  }
-}
-
 .example {
   border: 1px solid #bdc3c7;
-  padding: 0 15px;
-}
-
-@media -sass-debug-info {
-  filename {
-    font-family: file\:\/\/\/Users\/emilyporta\/Desktop\/Sites\/llc-slidedeck-template\/framework\/sass\/theme-llc\.scss;
-  }
-
-  line {
-    font-family: \00003214;
-  }
-}
-
-.example p {
-  margin: 10px 0;
-}
+  padding: 0 15px; }
+  .example p {
+    margin: 10px 0; }
 
 /* Incremental slides */
-
-@media -sass-debug-info {
-  filename {
-    font-family: file\:\/\/\/Users\/emilyporta\/Desktop\/Sites\/llc-slidedeck-template\/framework\/sass\/theme-llc\.scss;
-  }
-
-  line {
-    font-family: \00003221;
-  }
-}
-
 .delayed.displayed,
 .delayed-children > .displayed {
-  opacity: 1;
-}
+  opacity: 1; }
 
 /* First/Intro slide
 ---------------------*/
-
-@media -sass-debug-info {
-  filename {
-    font-family: file\:\/\/\/Users\/emilyporta\/Desktop\/Sites\/llc-slidedeck-template\/framework\/sass\/theme-llc\.scss;
-  }
-
-  line {
-    font-family: \00003228;
-  }
-}
-
 .intro {
   /*uncomment this if you don't want to use a background image */
   /* background: $gray-dark; */
-  background: -webkit-gradient(linear, top left, bottom left, from(rgba(0, 0, 0, 0.1)), color-stop(rgba(0, 0, 0, 0.8))), to(url(../img/banner-home.jpg)) no-repeat;
-  background: -webkit-linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.8)), url(../img/banner-home.jpg) no-repeat;
   background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.8)), url(../img/banner-home.jpg) no-repeat;
-  -webkit-background-size: cover;
   background-size: cover;
   color: white;
-  position: relative;
-}
-
-@media -sass-debug-info {
-  filename {
-    font-family: file\:\/\/\/Users\/emilyporta\/Desktop\/Sites\/llc-slidedeck-template\/framework\/sass\/theme-llc\.scss;
-  }
-
-  line {
-    font-family: \00003236;
-  }
-}
-
-.intro .logo {
-  height: 65px;
-}
-
-@media -sass-debug-info {
-  filename {
-    font-family: file\:\/\/\/Users\/emilyporta\/Desktop\/Sites\/llc-slidedeck-template\/framework\/sass\/theme-llc\.scss;
-  }
-
-  line {
-    font-family: \00003239;
-  }
-}
-
-.intro h1 {
-  font-size: 75px;
-  margin: 20px 0;
-  color: white;
-}
-
-@media -sass-debug-info {
-  filename {
-    font-family: file\:\/\/\/Users\/emilyporta\/Desktop\/Sites\/llc-slidedeck-template\/framework\/sass\/theme-llc\.scss;
-  }
-
-  line {
-    font-family: \00003245;
-  }
-}
-
-.intro .info ul {
-  margin: 0;
-  padding: 0;
-  list-style-type: none;
-  font-size: 2.2rem;
-}
-
-@media -sass-debug-info {
-  filename {
-    font-family: file\:\/\/\/Users\/emilyporta\/Desktop\/Sites\/llc-slidedeck-template\/framework\/sass\/theme-llc\.scss;
-  }
-
-  line {
-    font-family: \00003249;
-  }
-}
-
-.intro .info .fa {
-  padding-right: 10px;
-}
-
-@media -sass-debug-info {
-  filename {
-    font-family: file\:\/\/\/Users\/emilyporta\/Desktop\/Sites\/llc-slidedeck-template\/framework\/sass\/theme-llc\.scss;
-  }
-
-  line {
-    font-family: \00003252;
-  }
-}
-
-.intro .info a {
-  color: white;
-}
-
-@media -sass-debug-info {
-  filename {
-    font-family: file\:\/\/\/Users\/emilyporta\/Desktop\/Sites\/llc-slidedeck-template\/framework\/sass\/theme-llc\.scss;
-  }
-
-  line {
-    font-family: \00003256;
-  }
-}
-
-.intro .title-bg {
-  background: rgba(177, 9, 170, 0.8);
-  border-radius: 5px;
-  padding: 0 10px 0 6px;
-}
-
-@media -sass-debug-info {
-  filename {
-    font-family: file\:\/\/\/Users\/emilyporta\/Desktop\/Sites\/llc-slidedeck-template\/framework\/sass\/theme-llc\.scss;
-  }
-
-  line {
-    font-family: \00003261;
-  }
-}
-
-.intro .instructor-img {
-  border-radius: 50%;
-  width: 100px;
-  float: left;
-  margin-right: 20px;
-}
-
-@media -sass-debug-info {
-  filename {
-    font-family: file\:\/\/\/Users\/emilyporta\/Desktop\/Sites\/llc-slidedeck-template\/framework\/sass\/theme-llc\.scss;
-  }
-
-  line {
-    font-family: \00003267;
-  }
-}
-
-.intro h2 {
-  margin-bottom: 20px;
-  color: white;
-}
-
-@media -sass-debug-info {
-  filename {
-    font-family: file\:\/\/\/Users\/emilyporta\/Desktop\/Sites\/llc-slidedeck-template\/framework\/sass\/theme-llc\.scss;
-  }
-
-  line {
-    font-family: \00003271;
-  }
-}
-
-.intro h2 span {
-  color: #b109aa;
-  font-family: "Pacifico", cursive;
-  margin-right: 4px;
-  font-size: 3rem;
-  text-transform: lowercase;
-  font-weight: 400;
-}
+  position: relative; }
+  .intro .logo {
+    height: 65px; }
+  .intro h1 {
+    font-size: 75px;
+    margin: 20px 0;
+    color: white; }
+  .intro .info ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    font-size: 2.2rem; }
+  .intro .info .fa {
+    padding-right: 10px; }
+  .intro .info a {
+    color: white; }
+  .intro .title-bg {
+    background: rgba(177, 9, 170, 0.8);
+    border-radius: 5px;
+    padding: 0 10px 0 6px; }
+  .intro .instructor-img {
+    border-radius: 50%;
+    width: 100px;
+    float: left;
+    margin-right: 20px; }
+  .intro h2 {
+    margin-bottom: 20px;
+    color: white; }
+    .intro h2 span {
+      color: #b109aa;
+      font-family: "Pacifico", cursive;
+      margin-right: 4px;
+      font-size: 3rem;
+      text-transform: lowercase;
+      font-weight: 400; }
 
 /* highlight.js customizations
 -------------------------------*/
-
-@media -sass-debug-info {
-  filename {
-    font-family: file\:\/\/\/Users\/emilyporta\/Desktop\/Sites\/llc-slidedeck-template\/framework\/sass\/theme-llc\.scss;
-  }
-
-  line {
-    font-family: \00003284;
-  }
-}
-
 .hljs {
   font-family: Monaco, Andale Mono, monospace;
   padding: 20px 25px;
-  border-radius: 2px;
-}
+  border-radius: 2px; }
 
 /* presenter notes overrides
 -------------------------------*/
-
-@media -sass-debug-info {
-  filename {
-    font-family: file\:\/\/\/Users\/emilyporta\/Desktop\/Sites\/llc-slidedeck-template\/framework\/sass\/theme-llc\.scss;
-  }
-
-  line {
-    font-family: \00003292;
-  }
-}
-
 .presenter-notes {
   bottom: 0;
   width: 100%;
   background: rgba(255, 255, 255, 0.9);
   font-size: 18px;
   margin: 0;
-  max-height: inherit;
-}
-
-@media -sass-debug-info {
-  filename {
-    font-family: file\:\/\/\/Users\/emilyporta\/Desktop\/Sites\/llc-slidedeck-template\/framework\/sass\/theme-llc\.scss;
-  }
-
-  line {
-    font-family: \00003300;
-  }
-}
-
-.presenter-notes p {
-  margin-top: 0;
-}
+  max-height: inherit; }
+  .presenter-notes p {
+    margin-top: 0; }

@@ -199,15 +199,19 @@
           <p>Then refresh your browser's page to see the results!</p>
         </section>
 
-        <section class="slide">
-          <h2>Tags/Elements</h2>
-          <p>Those things with the angled brackets are called HTML "elements", they tell the browser what kind of content each of the bits of your website is.</p>
-          <p>There's almost always an "opening" tag and a "closing" one. The closing tag has a forward slash. Example: opening paragraph tag: &#60;p&#62; closing paragraph tag: &#60;&#47;p&#62;</p>
-          <p>You close tags in the reverse order in which they appear, just like in math. For example, in this code block:</p>
-          <pre><code>
-        &lt;span&gt;&lt;a href=&quot;#&quot;&gt;&lt;p&gt;paragraph wrapped in a link wrapped in a span&lt;/p&gt;&lt;/a&gt;&lt;/span&gt;
-          </code></pre>
-          <p>The span opens, the "a" (a link or "anchor" tag) opens, then the paragraph opens. The paragraph closes, the link closes, then the span closes.</p>
+        <section class="slide" data-markdown>
+##Tags/Elements
+
+Those things with the angled brackets are called HTML "elements", they tell the browser what kind of content each of the bits of your website is.
+
+There's almost always an "opening" tag and a "closing" one. The closing tag has a forward slash. Example: opening paragraph tag: `&#60;p&#62;` closing paragraph tag: `&#60;&#47;p&#62;`
+
+You close tags in the reverse order in which they appear, just like in math. For example, in this code block:
+
+```xml
+&lt;span&gt;&lt;a href=&quot;#&quot;&gt;&lt;p&gt;paragraph wrapped in a link wrapped in a span&lt;/p&gt;&lt;/a&gt;&lt;/span&gt;
+```
+The span opens, the `a` (a link or "anchor" tag) opens, then the paragraph opens. The paragraph closes, the link closes, then the span closes.
         </section>
         
         <section class="slide">
@@ -276,19 +280,32 @@
           <p>CSS stands for "Cascading Style Sheets"</p>
           <p>CSS is what we use to tell the browser how to style our HTML document - it's for making things pretty <strong>and usable/accessible</strong></p>
           <p>Just like HTML, CSS has it's own way of writing it that we have to learn. It looks a little something like this:</p>
-          <textarea class="snippet">
-            background-color: lightblue;
-            font-family: "Times New Roman", serif;
-          </textarea>
+<textarea class="snippet" data-subject="#intro-css">background-color: lightblue;
+font-family: "Times New Roman", serif;</textarea>
+            <div id="intro-css" class="example">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam nesciunt sint beatae dolor dolorum aliquid quis explicabo vitae numquam, quas illo dolore molestiae ratione, perferendis, deleniti nemo ea voluptatibus! Quibusdam.</p>
+            </div>
         </section>
         
-        <section class="slide">
-          <h2>CSS and HTML</h2>
-          <p>A CSS document is made up of a bunch of lines of code, or "rules", that keep referring back to the HTML elements in our HTML document</p>
-          <p>These rules are always made up of a <strong>selector</strong> and one or more <strong>declarations</strong></p>
-          <p>Each declaration has a <strong>property</strong> and a <strong>value</strong></p>
-          <p>The selector tells what element(s) to apply the styling to</p>
-          <p>The declaration contains what styles to apply</p>  
+        <section class="slide" data-markdown>
+##CSS and HTML
+
+A CSS document is made up of a bunch of lines of code, or "rules", that keep referring back to the HTML elements in our HTML document
+
+These rules are always made up of a **selector** and one or more **declarations**. Each declaration has a **property** and a **value**.
+
+```css
+selector {
+  property: value;
+}
+```
+
+The **selector** tells what element(s) to apply the styling to. The **declaration** contains what styles to apply. 
+```css
+h1 {
+  color: red;
+}
+``` 
         </section>
 
         <section class="slide">
@@ -324,9 +341,9 @@
 
         <section class="slide">
           <h2>Writing CSS - Where Does it Go?</h2>
-          <p>You can technically put CSS in one of three places: inline, embedded, and in it's own document (linked).</p>
+          <p>You can technically put CSS in one of three places: inline, internal, and in it's own document (linked/external).</p>
           <p>In this class, we're going to skip the first two because they're not good practice anyway, and go straight to making our own CSS documents.</p>
-          <p><strong>NOTE:</strong> We've already seen inline styles used in our examples with the "style" attribute, and embedded CSS is just CSS rules all together inside the head element, using a style tag.</p>
+          <p><strong>NOTE:</strong> We've already seen inline styles used in our examples with the "style" attribute, and internal CSS is just CSS rules all together inside the head element, using a style tag.</p>
         </section>
 
         <section class="slide">
@@ -340,11 +357,76 @@
         </section>
 
         <section class="slide">
+          <h2>Critical CSS Concepts</h2>
+          <p>There are a few things we need to learn about in order to understand our final project.</p>
+          <p>Open up the whole folder called <strong>final-project</strong> in your text editor. These files will work together to make our entire web page.</p>
+          <p>Open up <strong>styles.css</strong> (in the stylesheets directory) and <strong>index.html</strong> in Sublime</p>
+        </section>
+
+        <section class="slide">
+          <h2>First up: the "class" attribute!</h2>
+          <pre><code>
+        &lt;!--in the HTML--&gt;
+
+            &lt;div class=&quot;warning&quot;&gt;&lt;/div&gt;
+
+        /*in the CSS*/
+
+          .warning {
+            background-color: red;
+          }
+          </code></pre>
+          <p>Classes are used mostly for styling purposes, and can be reused throughout your code</p>
+          <p>In the CSS, a class selector starts with a ".", unlike HTML elements</p>
+          <p>Let's look at <strong>styles.css</strong> and our <strong>index.html</strong> files for examples</p>
+        </section>
+
+        <section class="slide">
+          <h2>CSS Selectors</h2>
+
+          <h3>Type Selectors</h3>
+          <pre><code>
+            
+          </code></pre>
+
+          <h3>Class Selectors</h3>
+          <pre><code>
+            
+          </code></pre>
+        </section>
+
+        <section class="slide">
+          <h2>CSS Selectors cont.</h2>
+          <h3>Descendant Selectors</h3>
+          <pre><code>
+            
+          </code></pre>
+          
+          <h3>Grouping with Commas</h3>
+          <pre><code>
+            
+          </code></pre>
+          
+          <h3><a href="http://www.w3.org/TR/CSS2/selector.html" alt="w3 selectors page">Sooooo many more</a></h3>
+        </section>
+
+        <section class="slide">
+          <h2>CSS Selectors cont.</h2>
+          <p>Let's look at our final project CSS and HTML files again, and try to find each type of selector we've just learned about:</p>
+          <ul>
+            <li>Type Selectors</li>
+            <li>Class Selectors</li>
+            <li>Descendant Selectors</li>
+            <li>Grouping</li>
+          </ul>
+        </section>
+
+        <section class="slide">
           <h2>Starting our Final Project!</h2>
           <p>We now know enough to get started on our project for today! But don't worry, we'll be learning more CSS and practicing HTML as we go along.</p>
-          <p>Open up the whole folder called <strong>final-project</strong> in your text editor. These files will work together to make our entire web page.</p>
           <p>Now open <strong>index.html</strong> in your browser - where are all the styles? Why does it still look like the default styling?</p>
         </section>
+
 
         <section class="slide">
           <h2>Colours!</h2>  
@@ -360,6 +442,7 @@
           <p>Clearfix will allow us to "clear" floats. If you float a child, it's parent can't "see" it anymore, and the height of that parent will collapse.</p>
           <p>When this happens, we simply add a class of clearfix (.clearfix) on to the parent div and boom! Everything's fixed.</p>
         </section>
+
 
         <!--<section class="slide">
             <h2>More CSS demos</h2>
