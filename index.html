@@ -276,8 +276,10 @@
           <p>CSS stands for "Cascading Style Sheets"</p>
           <p>CSS is what we use to tell the browser how to style our HTML document - it's for making things pretty <strong>and usable/accessible</strong></p>
           <p>Just like HTML, CSS has it's own way of writing it that we have to learn. It looks a little something like this:</p>
-          <textarea class="snippet">background-color: lightblue;
-          font-family: "Times New Roman", serif;</textarea>
+          <textarea class="snippet">
+            background-color: lightblue;
+            font-family: "Times New Roman", serif;
+          </textarea>
         </section>
         
         <section class="slide">
@@ -328,10 +330,20 @@
         </section>
 
         <section class="slide">
-          <h2>Writing CSS Cont.</h2>
-          <p>Let's start working on our first CSS document!</p>
-          <p>Open <strong>html-ex4.html</strong> in your text editor, as well as <strong>css-ex1.css</strong>, located in the <strong>styles</strong> folder. These two files will work together to make a better looking web page.</p>
-          <p>Open up the HTML file in your browser - where are all the styles? Why does it still look like the default styling?</p>
+          <h2>Let's make HTML and CSS documents and link them!</h2>
+          <p>In your examples folder you have <strong>html-ex4.html</strong> and <strong>css-ex4.css</strong> and they're both blank.</p>
+          <ol>
+            <li>First, lets write some content in our HTML document</li>
+            <li>Next, we'll write some CSS styles to make it look different</li>
+            <li>Finally we'll get them working together by linking them in the HTML</li>
+          </ol>
+        </section>
+
+        <section class="slide">
+          <h2>Starting our Final Project!</h2>
+          <p>We now know enough to get started on our project for today! But don't worry, we'll be learning more CSS and practicing HTML as we go along.</p>
+          <p>Open up the whole folder called <strong>final-project</strong> in your text editor. These files will work together to make our entire web page.</p>
+          <p>Now open <strong>index.html</strong> in your browser - where are all the styles? Why does it still look like the default styling?</p>
         </section>
 
         <section class="slide">
@@ -343,7 +355,10 @@
         </section>
 
         <section class="slide">
-          <h2>Borderbox and Clearfix</h2>  
+          <h2>Borderbox and Clearfix</h2>
+          <p>We're going to use these two things to help us make more sense of CSS styling.</p>
+          <p>Clearfix will allow us to "clear" floats. If you float a child, it's parent can't "see" it anymore, and the height of that parent will collapse.</p>
+          <p>When this happens, we simply add a class of clearfix (.clearfix) on to the parent div and boom! Everything's fixed.</p>
         </section>
 
         <!--<section class="slide">
