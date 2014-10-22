@@ -470,7 +470,43 @@ p, li, a {
         </section>
 
         <section class="slide">
-          <h2>Inheritance</h2>  
+          <h2>Inheritance</h2>
+          <p>If we look at <strong>styles.css</strong> in the final-project/stylesheets directory, we see a bunch of styles with a "GLOBAL STYLES" title on top of them</p>
+          <p>Look at the body selector. It has a font set on it. But our webpage clearly has paragraphs and other elements we could declare a font on. Why is it on body then?</p>
+          <p>Remember that CSS stands for Cascading Style Sheets? Now we know what they mean by cascading! The browser reads the CSS from the top of the page down.</p>
+
+        </section>
+
+        <section class="slide" data-markdown>
+##Specificity
+###What's going on here? Why are there so many "h2"'s?
+```css
+h2, h3, h4 {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  margin: 0;
+}
+
+h2, h3 {
+  text-transform: uppercase;
+}
+
+h2 {
+  font-size: 32px;
+}
+
+section h2 {
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 20px;
+}
+```
+
+        </section>
+
+        <section class="slide">
+          <p>The most specific OR the most recent CSS rule will be selected. Which one gets selected is based largely on magic.</p>
+          <p>GENERAL RULE: the styles for an element that came last in the CSS document will be used, unless overridden by a more "specific" selector. Classes, for example, make things more specific than just a type selector would be.</p>
+          <p>Example:</p>
         </section>
 
         <section class="slide">
