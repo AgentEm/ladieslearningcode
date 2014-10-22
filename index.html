@@ -378,36 +378,84 @@ h1 {
           </code></pre>
           <p>Classes are used mostly for styling purposes, and can be reused throughout your code</p>
           <p>In the CSS, a class selector starts with a ".", unlike HTML elements</p>
+          <p>You can have an unlimited number of classes on each element, but only add them if you absolutely need to.</p>
           <p>Let's look at <strong>styles.css</strong> and our <strong>index.html</strong> files for examples</p>
         </section>
 
-        <section class="slide">
-          <h2>CSS Selectors</h2>
+        <section class="slide" data-markdown>
+##CSS Selectors
+###Type Selectors
+```css
+div {
+  /*styles for all divs on the page*/
+}
 
-          <h3>Type Selectors</h3>
-          <pre><code>
-            
-          </code></pre>
+a {
+  /*styles for all links on the page*/  
+}
 
-          <h3>Class Selectors</h3>
-          <pre><code>
-            
-          </code></pre>
+p {
+  /*styles for all paragraphs on the page*/
+}
+```
         </section>
 
-        <section class="slide">
-          <h2>CSS Selectors cont.</h2>
-          <h3>Descendant Selectors</h3>
-          <pre><code>
-            
-          </code></pre>
-          
-          <h3>Grouping with Commas</h3>
-          <pre><code>
-            
-          </code></pre>
-          
-          <h3><a href="http://www.w3.org/TR/CSS2/selector.html" alt="w3 selectors page">Sooooo many more</a></h3>
+        <section class="slide" data-markdown>
+##CSS Selectors cont.
+###Descendant Selectors
+```css
+div p {
+  /*all paragraphs that are descendants of any divs*/
+}
+
+ul li a {
+  /*links inside of list items inside of unordered lists. 
+  Question: will this affect links inside of ordered lists (ol's)?*/
+}
+```
+        </section>
+
+        <section class="slide" data-markdown>
+##CSS Selectors cont.
+###Class Selectors
+```css
+.container {
+  /*styles for all elements with a class of container, no matter what type*/
+}
+
+p.container {
+  /*styles for all paragraph elements with a class of "container"*/
+}
+
+p.container a {
+  /*guess what this one does!*/
+}
+.container .warning {
+  /*how about this one?*/
+}
+
+.container.warning {
+  /*styles for all elements with BOTH a class of container and warning*/
+}
+```
+        </section>
+
+        <section class="slide" data-markdown>
+##CSS Selectors cont.
+###Grouping
+```css
+h1, h2, h3 {
+  /*all h1, h2, and h3's*/
+}
+
+p, li, a {
+  /*what will this one select?*/
+}
+
+.warning, a, p.cats {
+  /*what will this one select?*/
+}
+```
         </section>
 
         <section class="slide">
@@ -415,10 +463,14 @@ h1 {
           <p>Let's look at our final project CSS and HTML files again, and try to find each type of selector we've just learned about:</p>
           <ul>
             <li>Type Selectors</li>
-            <li>Class Selectors</li>
             <li>Descendant Selectors</li>
+            <li>Class Selectors</li>
             <li>Grouping</li>
           </ul>
+        </section>
+
+        <section class="slide">
+          <h2>Inheritance</h2>  
         </section>
 
         <section class="slide">
