@@ -360,8 +360,7 @@ h1 {
         <section class="slide">
           <h2>Critical CSS Concepts</h2>
           <p>There are a few things we need to learn about in order to understand our final project.</p>
-          <p>Open up the whole folder called <strong>final-project</strong> in your text editor. These files will work together to make our entire web page.</p>
-          <p>Open up <strong>styles.css</strong> (in the stylesheets directory) and <strong>index.html</strong> in Sublime</p>
+          <p>Open up <strong>html-ex5.html</strong> and <strong>css-ex5.css</strong> in your text editor. We'll reference this small site for the next few concepts before moving on to our final project.</p>
         </section>
 
         <section class="slide">
@@ -380,7 +379,7 @@ h1 {
           <p>Classes are used mostly for styling purposes, and can be reused throughout your code</p>
           <p>In the CSS, a class selector starts with a ".", unlike HTML elements</p>
           <p>You can have an unlimited number of classes on each element, but only add them if you absolutely need to.</p>
-          <p>Let's look at <strong>styles.css</strong> and our <strong>index.html</strong> files for examples</p>
+          <p>Let's look at our html-ex5.html and css-ex5.css files for examples</p>
         </section>
 
         <section class="slide" data-markdown>
@@ -461,7 +460,7 @@ p, li, a {
 
         <section class="slide">
           <h2>CSS Selectors cont.</h2>
-          <p>Let's look at our final project CSS and HTML files again, and try to find each type of selector and the grouping we've just learned about:</p>
+          <p>Let's look at our example five CSS and HTML files again, and try to find each type of selector and the grouping we've just learned about:</p>
           <ul>
             <li>Type Selectors</li>
             <li>Descendant Selectors</li>
@@ -472,9 +471,8 @@ p, li, a {
 
         <section class="slide">
           <h2>Inheritance</h2>
-          <p>If we look at <strong>styles.css</strong> in the final-project/stylesheets directory, we see a bunch of styles with a "GLOBAL STYLES" title on top of them</p>
-          <p>Look at the body selector. It has a font set on it. But our webpage clearly has paragraphs and other elements we could declare a font on. Why is it on body then?</p>
-          <p>Remember that CSS stands for Cascading Style Sheets? Now we know what they mean by cascading! The browser reads the CSS from the top of the page down.</p>
+          <p>If we look at our <strong>css-ex5.css</strong> file again and look at the body selector. It has a font-size and font-family and so on set on it. But our webpage clearly has paragraphs and other elements we could declare a font on. Why is it on body then?</p>
+          <p>Remember that CSS stands for Cascading Style Sheets? Now we know what they mean by cascading! The browser reads the CSS from the top of the page down, and some of these styles are "inherited" from their parents.</p>
 
         </section>
 
@@ -501,13 +499,24 @@ section h2 {
   margin-bottom: 20px;
 }
 ```
-
         </section>
 
-        <section class="slide">
-          <p>The most specific OR the most recent CSS rule will be selected. Which one gets selected is based largely on magic.</p>
-          <p>GENERAL RULE: the styles for an element that came last in the CSS document will be used, unless overridden by a more "specific" selector. Classes, for example, make things more specific than just a type selector would be.</p>
-          <p>Example:</p>
+        <section class="slide" data-markdown>
+##Specificity cont.
+The most specific OR the most recent CSS rule will be selected. Which one gets selected is based largely on magic.
+
+GENERAL RULE: the styles for an element that came last in the CSS document will be used, unless overridden by a more "specific" selector. Classes, for example, make things more specific than just a type selector would be.
+
+Example:
+```css
+p {
+  /*less specific*/
+}
+
+p.special-paragraph {
+  /*more specific*/
+}
+```
         </section>
 
         <section class="slide">

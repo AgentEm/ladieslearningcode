@@ -74,4 +74,10 @@ section {
 	background-color: #66CC99;
 }
 
+.box .special-paragraph {
+	font-family: serif;
+	color: #000;
+	text-decoration: underline;
+}
+
 /*ADD SOME CSS RULES AFTER THIS COMMENT TO PRACTICE SELECTING ELEMENTS*/
