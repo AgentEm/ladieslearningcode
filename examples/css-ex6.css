@@ -1,0 +1,39 @@
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+	max-width: 1400px;
+}
+.container {
+	width: 90%;
+	margin: 3rem auto;
+	padding: 2rem;
+	border: 5px solid lightgrey;
+	text-align: center;
+}
+
+.box {
+	width: 30%;
+	height: 10rem;
+	line-height: 10rem; /*vertically center one line of text*/
+	display: inline-block;
+	text-align: center;
+	color: #fff;
+	font-size: 5rem;
+}
+
+.box1 {
+	background-color: #DB0A5B;
+}
+
+.box2 {
+	background-color: #336E7B;
+}
+
+.box3 {
+	background-color: #F9BF3B;
+}
