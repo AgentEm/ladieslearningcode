@@ -519,13 +519,6 @@ p.special-paragraph {
 ```
         </section>
 
-        <section class="slide">
-          <h2>Starting our Final Project!</h2>
-          <p>We now know enough to get started on our project for today! But don't worry, we'll be learning more CSS and practicing HTML as we go along.</p>
-          <p>In our class files we have a folder called <strong>final-project</strong>. Open the <strong>index.html</strong> file in Sublime and in your browser - where are all the styles? Why does it still look like the default styling?</p>
-        </section>
-
-
         <section class="slide title">
           <h1>Part Two: Implementation</h1>
           <h2>How do we make our site responsive?</h2>
@@ -568,8 +561,73 @@ p.special-paragraph {
         <section class="slide">
           <h2>Media Queries: an Example</h2>
           <p>To see what this looks like, open up <strong>html-ex6.html</strong> and <strong>css-ex6.css</strong></p>
-          <p>Let's add some CSS in to change a few things. Resize the browser window - what breaks?</p>
-          <p>Resizing the browser is ok, but to get a more accurate idea of what your site will look like, pull up the Chrome web inspector:</p>
+          <p>We'll want to add some media queries in to our CSS to change a few things. Resize the browser window - what breaks?</p>
+        </section>
+        
+        <section class="slide">
+          <h2>Solving our Problems with Media Queries</h2>
+          <p>How about this:</p>
+          <img src="images/outside-numbers.jpg">
+          <p>While there are lots of things we can do to solve this, a easy one is change the text size!</p>
+        </section>
+
+        <section class="slide" data-markdown>
+##Coding Media Queries
+First, let's add some background colours into each media query to help us see where the breakpoints are, like this:
+
+```css
+/* Portrait tablet and small desktops */
+@media (max-width: 940px) {
+  body {
+    background-color: pink;
+  }
+}
+```
+        </section>
+
+        <section class="slide" data-markdown>
+##Coding Media Queries cont.
+Let's try changing the size of the text (.box p) to 3rem, 2.5rem, and then 2rem.
+
+The first one will look like this:
+
+```css
+/* Portrait tablet and small desktops */
+@media (max-width: 940px) {
+  body {
+    background-color: pink;
+  }
+  .box p {
+    font-size: 3rem;
+  }
+}
+```
+        </section>
+        <section class="slide" data-markdown>
+##Coding Media Queries cont.
+How about the size of the text in the aside (sidebar) and the big paragraph?
+
+Lets make them a bit smaller on smaller size screens. 
+
+How about **1.5rem on the p selector**? Remember why that won't effect the paragraph in the .box div?
+        </section>
+
+        <section class="slide">
+          <h2>Coding Media Queries cont.</h2>
+          <p>Let's try one more, a harder one this time. The aside element looks pretty squished when we resize the browser to a smaller viewport.</p>
+          <p>Let's make the element sit on top of the three .box elements</p>
+          <p>But...how?</p>
+          <ul>
+            <li class="delayed">Set the width of the aside to 100%</li>
+            <li class="delayed">This works only becuase we've put it before the main block of elements</li>
+            <li class="delayed">Set aside p to display:inline-block</li>
+            <li class="delayed">What else should we do?</li>
+          </ul>
+        </section>
+
+        <section class="slide">
+          <h2>A Brief Interlude: the Web Inspector</h2>
+          <p>We have a handy tool to see our page in specific device sizes, and to help us figure out what elements get what styles from where. It's the Web Inspector!</p>
           <ul>
             <li>Right click anywhere in the browser viewport</li>
             <li>Select <strong>Inspect Element</strong></li>
@@ -578,33 +636,15 @@ p.special-paragraph {
         </section>
         
         <section class="slide">
-          <h2>The Web Inspector</h2>
+          <h2>A Brief Interlude: the Web Inspector</h2>
           <p>The red box: our website. The green box: our HTML. The orange box: our CSS rules.</p>
           <img src="images/emulator.jpg">
         </section>
 
         <section class="slide">
-          <h2>Solving our Problems with Media Queries</h2>
-          <p>Now that we can see our site in a bunch of different viewport/device sizes, there's lots of problems.</p>
-          <p>Let's pick out a few and change them together.</p>
-          <p>How about this:</p>
-        </section>
-        
-        
-        <section class="slide">
-          <h2></h2>
-        </section>
-        
-        <section class="slide">
-          <h2></h2>
-        </section>
-        
-        <section class="slide">
-          <h2></h2>
-        </section>
-        
-        <section class="slide">
-          <h2></h2>
+          <h2>Starting our Final Project!</h2>
+          <p>We now know enough to get started on our project for today! But don't worry, we'll be learning more CSS and practicing HTML as we go along.</p>
+          <p>In our class files we have a folder called <strong>final-project</strong>. Open the <strong>index.html</strong> file in Sublime and in your browser - where are all the styles? Why does it still look like the default styling?</p>
         </section>
         
         <section class="slide">
@@ -618,60 +658,11 @@ p.special-paragraph {
 
 <!--         HTML + CSS for responsive design: key features
         Tools to test your designs
+        Layout
         Images
         Typography
         Navigation -->
 
-        <!--<section class="slide">
-            <h2>More CSS demos</h2>
-            <p>You can also target specific elements rather than the whole slide.</p>
-            <textarea class="snippet" data-subject="#test">color: slateblue;
-font-family: "Times New Roman", serif;
-padding: 20px;</textarea>
-            <div id="test" class="example">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam nesciunt sint beatae dolor dolorum aliquid quis explicabo vitae numquam, quas illo dolore molestiae ratione, perferendis, deleniti nemo ea voluptatibus! Quibusdam.</p>
-            </div>
-
-            <p>Just like the previous example, the CSS is added in a <code>textarea</code> element but also include a <code>data-subject</code> attribute.</p>  
-
-            <p>In the element to be targeted, add an <code>id</code> with a value that matches the <code>data-subject</code> of the  <code>textarea</code> and add a class of <code>.example</code> to add the border style. (View the source for this slide.)</p>
-        </section> -->
-
-<!--         <section class="slide">
-            <h2>Presentation mode</h2>
-
-            <p>This slide has presenter notes. They are only visible in presenter view (Ctrl+P or Shift+P).  Just add the <code>.presenter-notes</code> class to the element container the notes.
-
-            <p>Check out the notes in this slide!</p>
-
-            <p class="presenter-notes">
-                Notes! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt soluta sit maiores nihil doloribus tempore dolor debitis a repudiandae recusandae natus officia, ad asperiores quaerat facilis nobis illo alias? Quaerat.
-            </p>
-        </section> -->
-<!-- 
-        <section class="slide" data-markdown>
-            ##CSS Customizations
-
-            The CSS for this template is written in [Sass](http://sass-lang.com/).  For your forked copy of these slides, feel free to use either Sass or the compiled CSS files. Just note that if you pull in any styles updates from the repo, the CSS files will be recompiled.
-
-            If you want to change the intro slide background image (or not use an image at all), change the style using the `.intro` class.
-
-            The text in the slide can automatically scale based on window size. If you want to turn this feature "on" or off", in **framework > sass > _variables.scss** under font sizes, use the `rem` values for scalable text and `px` values for non-scalable text. (You can still zoom in with the pixel sized text.)
-            
-            Avoid changing the base styles files (`_mixins.scss`, `_variables.scss` and `theme-llc.scss`). Put all of your customizations and workshop specific styles in workshop.scss.  If you'd like to add an improvement or enhancement, please submit a pull request or email [christina@ladieslearningcode.com](mailto:christina@ladieslearningcode.com).
-        </section> -->
-<!-- 
-        <section class="slide" data-markdown>
-            ##Other Customizations
-
-            The progress bar at the top of the page can be defined by adding the presentation duration, in minutes, in the `data-duration` attribute on the `body` tag.  If you do not want to use it at all, leave the value empty.
-
-            The text in the slide can automatically scale based on window size. If you want to turn this feature "on" or off", in **framework > sass > _variables.scss** under font sizes, use the `rem` values for scalable text and `px` values for non-scalable text. (You can still zoom in with the pixel sized text.)
-
-            Since most, if not all, links included in the workshops are to external resources, all links open in a new window to avoid participants clicking away from the slide presentations.  Note that this feature is included using `&lt;base target="_blank"&gt;` added just after the opening `body` tag. 
-
-            (See more about the [`base`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/base) tag.)
-        </section> -->
 
         <!-- Last slide -->
         <section class="slide">
