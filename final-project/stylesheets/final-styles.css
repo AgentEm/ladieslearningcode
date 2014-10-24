@@ -61,7 +61,6 @@ a:hover {
   max-width: 1000px;
   margin: 0 auto;
   padding: 60px 0;
-  /* and / or */
   width: 80%;
 }
 
@@ -283,4 +282,27 @@ footer {
   clear: both;
   font-size: 12px;
   margin-top: 50px;
+}
+
+/*MEDIA QUERIES*/
+
+/* Portrait tablet and small desktops */
+@media (max-width: 940px) {
+  body {
+    border: 3px solid green;
+  }
+}
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 768px) {
+  body {
+    border: 3px solid purple;
+  }
+}
+
+/* Landscape phones and down */
+@media (max-width: 480px) {
+  body {
+    border: 3px solid red;
+  }
 }
