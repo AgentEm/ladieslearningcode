@@ -530,6 +530,22 @@ p.special-paragraph {
 }
 ```
         </section>
+        <section class="slide">
+          <h2>The Box Model</h2>
+          <p>Margins, padding, widths, and borders oh my: the glorious box model.</p>
+          <img src="images/boxmodel.png" alt="box model">
+        </section>
+<section class="slide" data-markdown>
+##Border-Box
+
+Now that we know what the box model is, lets fix it. Because CSS is so very broken.
+```css
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+```
+Check out **css-ex5.css** for an example.
+</section>
 
         <section class="slide title">
           <h1>Part Two: Implementation</h1>
