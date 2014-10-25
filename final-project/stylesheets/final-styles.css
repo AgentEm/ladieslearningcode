@@ -14,6 +14,10 @@ force clear the floats of the child elements */
   clear: both;
 }
 
+html {
+  font-size: 16px; /*NEW usually the browser default, but just to be safe*/
+}
+
 body {
   font-family: "Merriweather", serif;
   line-height: 1.5;
@@ -24,7 +28,7 @@ body {
 
 h1 {
   font-family: "Pacifico", cursive;
-  font-size: 80px;
+  font-size: 5rem; /*used to be 80px*/
   font-weight: 400;
   margin: 0;
 }
@@ -40,7 +44,7 @@ h2, h3 {
 }
 
 h2 {
-  font-size: 32px;
+  font-size: 2rem; /*used to be 32px*/
 }
 
 section h2 {
@@ -52,6 +56,7 @@ a {
   color: #16a085;
   transition: all 0.2s;
 }
+
 a:hover {
   color: #fff;
   text-decoration: none;
@@ -86,6 +91,7 @@ header {
 -------------*/
 nav {
   background-color: #fff;
+  font-size: 1rem;
 }
 
 nav ul {
@@ -170,11 +176,11 @@ nav a:hover {
 -------------------*/
 .work-experience .date {
   margin: 5px 0 20px 0;
-  font-size: 12px;
+  font-size: 0.7rem; /*was 12px*/
 }
 .work-experience h3 {
   line-height: 1.25;
-  font-size: 16px;
+  font-size: 1rem; /*was 16px*/
 }
 .work-experience strong {
   font-weight: 400;
@@ -186,7 +192,7 @@ nav a:hover {
   padding-right: 30px;
 }
 .work-experience .description {
-  font-size: 14px;
+  font-size: 1rem; /*was 14px*/
   width: 70%;
   float: right;
 }
@@ -196,7 +202,7 @@ nav a:hover {
 
 .company {
   font-family: "Pacifico", cursive;
-  font-size: 20px;
+  font-size: 1.5rem; /*was 20px*/
   letter-spacing: 0.08em;
   color: #16a085;
 }
@@ -207,7 +213,7 @@ nav a:hover {
   background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../images/background-1.jpg) no-repeat fixed 50%;
   background-size: cover;
   text-align: center;
-  font-size: 20px;
+  font-size: 1.5rem; /*was 20px*/
 }
 .skills h3 {
   margin: 20px;
@@ -269,7 +275,7 @@ nav a:hover {
   width: 50%;
   float: right;
   text-align: right;
-  font-size: 30px;
+  font-size: 2rem; /*was 30px*/
 }
 .social a {
   margin: 0 8px;
@@ -280,7 +286,7 @@ nav a:hover {
 
 footer {
   clear: both;
-  font-size: 12px;
+  font-size: 0.7rem; /*was 12px*/
   margin-top: 50px;
 }
 
@@ -298,11 +304,35 @@ footer {
   body {
     border: 3px solid purple;
   }
+  .skills-circles ul li {
+    margin: 1.5rem;
+  }
 }
 
 /* Landscape phones and down */
 @media (max-width: 480px) {
   body {
     border: 3px solid red;
+  }
+  .skills-circles ul li {
+    height:120px;
+    width:120px;
+    line-height:120px; /*making this same as height property centers one line of text*/
+    font-size: 1rem;
+    margin: 3%;
+  }
+  .download {
+    display: none;
+  }
+  .profile-image {
+    float: none;
+    display:block;
+    margin:0 auto 4rem;
+    width:70%;
+  }
+  .profile .summary {
+    text-align: center;
+    float: none;
+    width: 100%; /*notice we still have padding from the code above*/
   }
 }

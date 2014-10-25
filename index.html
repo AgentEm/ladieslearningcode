@@ -667,18 +667,125 @@ How about **1.5rem on the p selector**? Remember why that won't effect the parag
           <ul>
             <li class="delayed">Hide fixed elements on smaller screens</li>
             <li class="delayed">Margin, padding and text sizing on header and circle elements</li>
-            <li class="delayed">Profile image size and positioning</li>
+            <li class="delayed">Image size and positioning</li>
             <li class="delayed">:hover effects and similar things to think about</li>
             <li class="delayed">Centering all the things, spacing/whitespace</li>
             <li class="delayed">Navigation!</li>
           </ul>
         </section>
 
+        <section class="slide" data-markdown>
+##Hiding Elements
+Don't make this a habit: it's convenient but the browser still needs to load this code, and that slows your site down. Use it sparingly!
 
+```css
+@media (max-width: somewidthpx) {
+  somediv {
+    display: none;
+  }
+}
+```
+That's it! If we look at our site as a small phone in the emulator we can see the "download pdf" button takes up too much screen real estate - let's hide it on our smallest screens.
+        </section>
+
+        <section class="slide">
+          <h2>Typography</h2>
+          <p>We could have an entire class on web typography alone.</p>
+          <p>Margin, padding, line-height, text-size, and font-family.</p>
+          <p>These are all extremely important in responsive design - keep your text limited and meaningful, use one to two readable fonts, and make sure text is a good size for all screen sizes.</p>
+          <p>Typography on a responsive site should be: readable, efficient, and responsive itself. How do we accomplish this?</p>
+        </section>
+
+        <section class="slide">
+          <h2>Responsive Type: Rems and Ems Versus Pixels</h2>
+          <ul>
+            <li class="delayed"><strong>px:</strong> pixels, not responsive. Boo.</li>
+            <li class="delayed"><strong>em:</strong> size is relative to the type size of the parent element. Eg. if parent element is 14px and child element is 1em, child element is 14px. If child element is 0.5em child element is 7px</li>
+            <li class="delayed"><strong>rem:</strong> root ems - like ems but relative ONLY to the root element (html element)</li>
+          </ul>
+          <p class="delayed">This can be very confusing. Here's a great way to approach it: <a href="http://css-tricks.com/rems-ems/" alt="css tricks rems versus ems article">http://css-tricks.com/rems-ems</a></p>
+          <p class="delayed">When in doubt, just use rems, and set font-size on your html element (default usually 16px).</p>
+        </section>
+        <section class="slide" data-markdown>
+##Making our Web Copy Responsive
+Let's go through our final project CSS and change some of the font-sizes to rems.
+
+Since the root font-size is 16px, just divide the pixel size in the CSS by 16. 
+
+Example:
+
+```css
+h1 {
+  font-family: "Pacifico", cursive;
+  font-size: 5rem; /*used to be 80px*/
+  font-weight: 400;
+  margin: 0;
+}
+```
+        </section>
+
+        <section class="slide">
+          <h2>Margin and Padding</h2>
+          <p>From the 768px media query down, the circles in the Skills section don't look great. We can change this by adjusting our <strong>margin</strong> and <strong>padding</strong> values.</p>
+          <ol>
+            <li class="delayed">First, let's use the web inspector to find out what classes/elements we need to target</li>
+            <li class="delayed">Next, we'll go to our CSS and target that class in our 768px media query</li>
+            <li class="delayed">We want to space the circles out a bit more, so let's add a margin to the elements</li>
+          </ol>
+        </section>
+
+        <section class="slide">
+          <h2>Resizing Elements</h2>
+          <p>You might notice that at our 480px media query the circles are in one long line. They're taking up too much room! Scrolling is boring, so let's make these a bit smaller.</p>
+          <p>Again, target the element in the media query. Then change the height, width, margin, and line-height properties.</p>
+          <p>Oh no! the font size is too big too, let's change that! Notice how we don't have to include the margin value from the last query - remember styles inherit/cascade!</p>
+        </section>
+
+        <section class="slide">
+          <h2>Profile Image</h2>
+          <p>Our profile image gets really small at smaller screens. It also takes up a lot of room from 480px. What should we do with it?</p>
+          <ol>
+            <li>Make it a bit smaller by changing width to 60%</li>
+            <li>set the display property to the value "block"</li>
+            <li>set margin to 0 auto, the magical centering declaration for block elements</li>
+            <li>Set float to "none", as it was float:left before</li>
+            <li>Go back to margin and actually set it to     margin:0 auto 4rem; to put some space on the bottom</li>
+          </ol>
+        </section>
+        <section class="slide" data-markdown>
+##Centering Text, Removing Floats
+
+The content under our profile picture doesn't look so hot on our smallest screen. Centering content is a simple, common way of getting some white space on a cramped mobile screen.
+
+Try this out on our 480px media query:
+
+```css
+.profile .summary {
+  text-align: center;
+  float: none;
+  width: 100%; /*notice we still have padding from the code above*/
+}
+```
+
+        </section>
+        <section class="slide">
+          <h2>Final Notes</h2>
+          <p>Responsive is an iterative process. Don't get discouraged if every time you look back at your site, something needs to be changed! Websites are never "done", even the best can always be improved.</p>
+          <p>When in doubt:</p>
+          <ul>
+            <li>Center content (but keep it readable and large enough on small screens)</li>
+            <li>Don't use fixed elements, hover effects, etc. as necessary parts of the functionality of your site</li>
+            <li>Think about <strong>HOW</strong> your user will be using your site: mobile's different!</li>
+            <li>Keep it simple! Less words, utilize white space</li>
+            <li>Remember your site will never look pixel perfect on 100% of viewport sizes</li>
+          </ul>
+        </section>
+        
         <!-- Last slide -->
         <section class="slide">
             <h2>Thank you!</h2>
             <p>My email: <a href="mailto:eeporta@gmail.com">eeporta@gmail.com</a></p>
+            <p>Twitter: <a href="http://twitter.com/agentemily" alt="emily's twitter account">@agentemily</a></p>
             <p class="attribution">Slide deck created with <a href="https://github.com/LeaVerou/csss">Lea Verou's CSS-based SlideShow System</a> and <a href="http://lab.hakim.se/reveal-js/">reveal.js</a>.</p>
         </section>
 
